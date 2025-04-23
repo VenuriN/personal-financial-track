@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Financial Tracker</string>
+    
+    <!-- Navigation -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_transactions">Transactions</string>
+    <string name="nav_budget">Budget</string>
+    <string name="nav_settings">Settings</string>
+    
+    <!-- Add Transaction -->
+    <string name="transaction_details">Transaction Details</string>
+    <string name="amount_hint">Amount</string>
+    <string name="category_hint">Category</string>
+    <string name="date_hint">Date</string>
+    <string name="description_hint">Description</string>
+    <string name="note_hint">Note (Optional)</string>
+    <string name="save_transaction">Save Transaction</string>
+    
+    <!-- Settings -->
+    <string name="appearance">Appearance</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="currency">Currency</string>
+    <string name="select_currency">Select Currency</string>
+    <string name="data_management">Data Management</string>
+    <string name="backup_data">Backup Data</string>
+    <string name="restore_data">Restore Data</string>
+    
+    <!-- Dashboard -->
+    <string name="income">Income</string>
+    <string name="expenses">Expenses</string>
+    <string name="balance">Balance</string>
+    <string name="budget">Budget</string>
+    <string name="recent_transactions">Recent Transactions</string>
+    <string name="expenses_by_category">Expenses by Category</string>
+</resources>

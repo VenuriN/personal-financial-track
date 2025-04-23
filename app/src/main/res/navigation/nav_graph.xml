@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.financialtraker.ui.dashboard.DashboardFragment"
+        android:label="Dashboard" />
+
+    <fragment
+        android:id="@+id/transactionsFragment"
+        android:name="com.example.financialtraker.ui.transactions.TransactionsFragment"
+        android:label="Transactions">
+        <action
+            android:id="@+id/action_transactionsFragment_to_addTransactionFragment"
+            app:destination="@id/addTransactionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/budgetFragment"
+        android:name="com.example.financialtraker.ui.budget.BudgetFragment"
+        android:label="Budget" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.financialtraker.ui.settings.SettingsFragment"
+        android:label="Settings" />
+
+    <fragment
+        android:id="@+id/addTransactionFragment"
+        android:name="com.example.financialtraker.ui.transactions.AddTransactionFragment"
+        android:label="Add Transaction" />
+
+</navigation> 
