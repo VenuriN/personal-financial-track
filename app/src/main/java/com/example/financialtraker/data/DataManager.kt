@@ -20,6 +20,9 @@ class DataManager(private val context: Context) {
         private const val KEY_MONTHLY_BUDGET = "monthly_budget"
         private const val KEY_CURRENCY = "currency"
         private const val KEY_DARK_MODE = "dark_mode"
+        private const val KEY_NOTIFICATIONS = "notifications"
+        private const val KEY_PASSCODE = "passcode"
+        private const val KEY_FIRST_TIME = "first_time"
     }
 
     // Transaction operations
@@ -85,6 +88,32 @@ class DataManager(private val context: Context) {
 
     fun isDarkMode(): Boolean {
         return sharedPreferences.getBoolean(KEY_DARK_MODE, false)
+    }
+
+    // Notification operations
+    fun setNotificationsEnabled(enabled: Boolean) {
+        sharedPreferences.edit().putBoolean(KEY_NOTIFICATIONS, enabled).apply()
+    }
+
+    fun areNotificationsEnabled(): Boolean {
+        return sharedPreferences.getBoolean(KEY_NOTIFICATIONS, true)
+    }
+
+    // Passcode operations
+    fun setPasscode(passcode: String) {
+        sharedPreferences.edit().putString(KEY_PASSCODE, passcode).apply()
+    }
+
+    fun getPasscode(): String {
+        return sharedPreferences.getString(KEY_PASSCODE, "1234") ?: "1234"
+    }
+
+    fun isFirstTime(): Boolean {
+        return sharedPreferences.getBoolean(KEY_FIRST_TIME, true)
+    }
+
+    fun setFirstTime(completed: Boolean) {
+        sharedPreferences.edit().putBoolean(KEY_FIRST_TIME, completed).apply()
     }
 
     // Helper methods

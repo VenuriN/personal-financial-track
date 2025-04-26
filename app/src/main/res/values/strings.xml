@@ -25,6 +25,8 @@
     <string name="data_management">Data Management</string>
     <string name="backup_data">Backup Data</string>
     <string name="restore_data">Restore Data</string>
+    <string name="notifications">Notifications</string>
+    <string name="enable_notifications">Enable Notifications</string>
     
     <!-- Dashboard -->
     <string name="income">Income</string>
@@ -33,4 +35,30 @@
     <string name="budget">Budget</string>
     <string name="recent_transactions">Recent Transactions</string>
     <string name="expenses_by_category">Expenses by Category</string>
+
+    <!-- Budget -->
+    <string name="monthly_budget">Monthly Budget</string>
+    <string name="budget_amount">Budget Amount</string>
+    <string name="save_budget">Save Budget</string>
+    <string name="budget_progress">Budget Progress</string>
+    <string name="category_wise_spending">Category-wise Spending</string>
+
+    <!-- Onboarding 1,2,3 -->
+    <string name="welcome_to_financial_tracker">Welcome to Financial Tracker!</string>
+    <string name="manage_your_money_smartly_and_easily">Manage your money smartly and easily.</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+
+    <string name="track_your_expenses_and_income_easily">Track your expenses and income easily.</string>
+    <string name="visualize_your_spending_and_saving_with_beautiful_charts">Visualize your spending and saving with beautiful charts.</string>
+
+    <string name="ready_to_get_started">Ready to get started?</string>
+    <string name="let_s_take_control_of_your_finances_together">Let\'s take control of your finances together!</string>
+    <string name="finish">Finish</string>
+
+    <!-- Passcode 1,2,3 -->
+    <string name="enter_passcode">Enter Passcode</string>
+    <string name="passcode">Passcode</string>
+    <string name="submit">Submit</string>
+
 </resources>

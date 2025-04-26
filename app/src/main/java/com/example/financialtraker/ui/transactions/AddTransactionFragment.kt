@@ -223,7 +223,22 @@ class AddTransactionFragment : Fragment() {
             dataManager.saveTransaction(transaction)
             Toast.makeText(context, "Transaction saved", Toast.LENGTH_SHORT).show()
         }
-        findNavController().navigateUp()
+
+        // Check balance and show alert if needed
+        val balance = dataManager.getMonthlyIncome() - dataManager.getMonthlyExpenses()
+        if (balance < 500) {
+            val currencySymbol = dataManager.getCurrencySymbol()
+            androidx.appcompat.app.AlertDialog.Builder(requireContext())
+                .setTitle("Low Balance Alert")
+                .setMessage("Your current balance is $currencySymbol$balance. Please manage your expenses carefully.")
+                .setPositiveButton("OK") { _, _ ->
+                    findNavController().navigateUp()
+                }
+                .setCancelable(false)
+                .show()
+        } else {
+            findNavController().navigateUp()
+        }
     }
 
     override fun onDestroyView() {
